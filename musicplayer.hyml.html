@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Player App</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #eaeaea;
+            font-family: Arial, sans-serif;
+        }
+
+        .app {
+            width: 320px;
+            height: 520px;
+            background-color: white;
+            margin: 50px auto;
+            border-radius: 20px;
+            box-shadow: 0 0 15px gray;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .album {
+            width: 200px;
+            height: 200px;
+            background-color: #ddd;
+            margin: auto;
+            border-radius: 15px;
+            line-height: 200px;
+            font-size: 40px;
+        }
+
+        .song {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .artist {
+            font-size: 14px;
+            color: gray;
+            margin-bottom: 20px;
+        }
+
+        audio {
+            width: 100%;
+        }
+
+        .controls {
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: #f2f2f2;
+            border-radius: 50%;
+            line-height: 50px;
+            font-size: 18px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="app">
+
+        <div class="header">🎵 Music Player</div>
+
+        <div class="album">🎶</div>
+
+        <div class="song">Sample Song</div>
+        <div class="artist">Unknown Artist</div>
+
+        <audio controls>
+            <source src="music.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="controls">
+            <div class="btn">⏮</div>
+            <div class="btn">▶</div>
+            <div class="btn">⏭</div>
+        </div>
+
+    </div>
+
+</body>
+</html>
